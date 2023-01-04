@@ -6,7 +6,7 @@ function App() {
     <div className="App">      
     <div className="shape"></div>
     <div className="shape" id="idAttribute"></div>
-    Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. 
+    {/* Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis.  */}
   </div>
   );
 }
