@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+div:not(.shape) {
+  /* em is to manage the text length and so is the font-sfamily and line-height */
+    
+    --s:100vW; /*Size of the circle */
+    --p:0px;  /*padding*/
+  
+    font-family:verdana;
+    font-size:16px;
+    line-height:1.25em;
+    text-align:justify;
+    width: var(--s);
+    height: 100vH;
+    /* height: var(--s); */
+    border-radius: 50%;
+    background: #333;
+    color:#fff;
+    display:inline-block;
+    vertical-align:middle;
+    margin:5px;
   }
-}
+  
+  /* .fix-up {
+    --s:20em;
+    --p:15px
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  div.shape:before {
+    content: '';
+    float: left;
+    clear: left;
+    height: calc(var(--s)/2);
+    width: calc(var(--s)/2);
+    /*background*/ shape-outside: radial-gradient(farthest-side at bottom right, transparent calc(100% - var(--p)), red 0);
+  }
+  
+  div.shape#idAttribute:before {
+   /*background*/ shape-outside: radial-gradient(farthest-side at top right, transparent calc(100% - var(--p)), red 0);
+  }
+  
+  div.shape:after {
+    content: '';
+    float: right;
+    clear: right;
+    height: calc(var(--s)/2);
+    width: calc(var(--s)/2);
+   /*background*/ shape-outside: radial-gradient(farthest-side at bottom left, transparent calc(100% - var(--p)), red 0);
+  }
+  
+  div.shape#idAttribute:after {
+   /*background*/ shape-outside: radial-gradient(farthest-side at top left, transparent calc(100% - var(--p)), red 0);
+  }
+  
+  
+  /* extra */
+  body {
+    background: #399;
+    margin: 0;
+  }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes round-shpae-container {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.round-shpae-container {
+  width: 100vW;
+  height: 100vH;
+  background-color: coral;
+  border-radius: 50vW;
+  shape-outside: margin-box;
+}
+
+@media (shape: round) {
+  .round-shpae-container {
+    width: 100vW;
+    height: 100vH;
+    background-color: coral;
+    border-radius: 50%;
   }
 }

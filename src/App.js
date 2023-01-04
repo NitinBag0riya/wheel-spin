@@ -3,22 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App">      
+    <div className="shape"></div>
+    <div className="shape" id="idAttribute"></div>
+    Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. Pel lentes que ultri cies. Lorem ipsum dolor sit amet, eget orci, tinci dunt place rat in sociis. 
+  </div>
   );
 }
 
