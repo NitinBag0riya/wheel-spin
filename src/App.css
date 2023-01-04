@@ -10,6 +10,7 @@ div:not(.shape) {
     text-align:justify;
     width: var(--s);
     height: 100vH;
+    max-height: -webkit-fill-available;
     /* height: var(--s); */
     border-radius: 50%;
     background: #333;
